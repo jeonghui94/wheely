@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+body {
+    font-family: "NanumSquareNeoBold";
+    color: #333;
+    background-color: #fff;
+}
+
+#wrap {
+    min-width: 1320px;
+}
+
+/* header */
+header {
+    border-bottom: solid 2px #2c5ab5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+nav {
+    width: 1320px;
+    margin: 0 auto;
+    height: 64px;
+    padding: 18px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* logo */
+.logo {
+    float: left;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo img {
+    display: block;
+    height: 30px;
+}
+
+/* gnb */
+.gnb {
+    font-family: "NanumSquareNeoHeavy";
+    display: inline-block;
+}
+
+.gnb li {
+    float: left;
+}
+
+.gnb li a {
+    display: block;
+    padding: 0 50px;
+    transition: all 0.3s;
+}
+
+.gnb li a.active {
+    color: #000;
+}
+
+.sub_gnb {
+    color: #aaa;
+}
+
+.gnb:hover {
+    color: #aaa;
+}
+
+.gnb li a:hover {
+    color: #000;
+}
+
+.gnb li a:not(.active):hover {
+    color: #000;
+}
+
+/* etc */
+.etc {
+    float: right;
+}
+
+.etc li {
+    float: left;
+}
+
+.etc li a {
+    margin: 0 15px;
+}
+
+.etc li:nth-child(1) a {
+    background: url(../images/header/icon_login.svg) no-repeat center left;
+    padding-left: 20px;
+}
+
+.etc li:nth-child(2) a {
+    display: block;
+    margin-top: 4px;
+}
+
+.etc li:nth-child(2) a img {
+    display: block;
+}

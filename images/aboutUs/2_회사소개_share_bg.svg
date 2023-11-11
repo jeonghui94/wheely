@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="940" height="500" viewBox="0 0 940 500">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.986" y1="0.972" x2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d6f9f9"/>
+      <stop offset="1" stop-color="#c0eeee"/>
+    </linearGradient>
+  </defs>
+  <path id="_2_회사소개_share_bg" data-name="2_회사소개_share_bg" d="M0,0H910a30,30,0,0,1,30,30V470a30,30,0,0,1-30,30H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="url(#linear-gradient)"/>
+</svg>
