@@ -5,7 +5,7 @@ footer {
     margin-top: 150px;
     height: 513px;
     background: url(../images/footer/footer_bg.png) no-repeat top center;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .inner_footer {
