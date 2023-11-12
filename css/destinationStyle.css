@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* banner img ani */
+@keyframes grow {
+    0% {
+        background-size: 150% auto;
+    }
+    100% {
+        background-size: 200% auto;
+    }
+}
+
+/* banner typing ani */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 450px;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* banner */
+#banner {
+    background: linear-gradient(
+            rgba(61, 172, 219, 0.8),
+            rgba(61, 172, 219, 0.8)
+        ),
+        url(../images/destination/banner.jpg) no-repeat center;
+    animation: grow 30s linear infinite;
+    position: relative;
+    height: 540px;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 540px;
+    backdrop-filter: blur(4px);
+}
+.inner_banner {
+    overflow: hidden;
+    margin: 0 auto;
+    height: 540px;
+    width: 1320px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding-top: 170px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.inner_banner .text_wrap {
+    border: 10px solid #fff;
+    box-shadow: 0 3px 10px rgba(30, 59, 123, 0.3);
+    height: 120px;
+    width: 1012px;
+    padding: 25px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.inner_banner h2 {
+    font-size: 36px;
+    line-height: 53px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 50%;
+    width: 445px;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+}
+
+.anim-typewriter {
+    animation: typewriter 1.5s steps(14) 1s 1 normal both,
+        blinkTextCursor 600ms steps(14) infinite normal;
+}
+
+/* search_bar */
+.search_bar {
+    display: inline-block;
+    margin-top: 140px;
+    height: 54px;
+    width: 480px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+}
+
+.search_bar input {
+    border: none;
+    width: 350px;
+    font-size: 18px;
+    color: #8e8e8e;
+    outline: none;
+    background-color: #ffffff00;
+}
+
+.search_bar input::placeholder {
+    color: #adadad;
+}
+
+.search_bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 24px;
+    float: right;
+}
+
+.search_bar button img {
+    display: block;
+    width: 100%;
+}
+
+/* banner 3d img */
+.img_3d {
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+}
+
+/* 국내 여행지 */
+section {
+    width: 1320px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 120px;
+}
+
+.title h3 {
+    font-size: 30px;
+    font-family: "NanumSquareNeoExtraBold";
+    margin-bottom: 30px;
+}
+
+.title_line {
+    background-color: #333;
+    width: 80px;
+    height: 2px;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 28px;
+    font-family: "NanumSquareNeoExtraBold";
+}
+
+.domestic ul {
+    margin: 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.domestic ul li a {
+    display: block;
+    width: 236px;
+    height: 286px;
+    overflow: hidden;
+    border-radius: 124px 124px 0 0;
+    background-color: #000;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.domestic ul li a img {
+    display: block;
+    height: 100%;
+    opacity: 0.8;
+    transition: transform 0.5s;
+}
+
+.domestic ul li:hover a img {
+    transform: scale(1.1);
+}
+
+h6 {
+    font-size: 24px;
+    font-family: "NanumSquareNeoExtraBold";
+    color: #fff;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+.domestic ul li:hover a {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 #434959;
+}
+
+.domestic ol {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.domestic ol li a {
+    display: block;
+    width: 150px;
+    height: 50px;
+    box-shadow: 0.3em 0.3em 0 0 #b2c0e5, inset 0.3em 0.3em 0 0 #b2c0e5;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+
+.domestic ol li:hover a,
+.domestic ol li:hover a {
+    box-shadow: 0 0 0 0 #3455ab, inset 6em 3.5em 0 0 #3455ab;
+    color: #fff;
+}

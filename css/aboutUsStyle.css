@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* banner ani */
 @keyframes grow {
     0% {
         background-size: 150% auto;
@@ -34,4 +35,174 @@
 .inner_banner h2 {
     font-size: 36px;
     line-height: 53px;
+}
+
+/* brand story */
+section {
+    width: 1320px;
+    margin: 150px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    margin-bottom: 120px;
+}
+
+.title h5 {
+    font-size: 30px;
+    font-family: "NanumSquareNeoExtraBold";
+    margin-bottom: 30px;
+}
+
+.title_line {
+    background-color: #333;
+    width: 80px;
+    height: 2px;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 26px;
+    font-family: "NanumSquareNeoLight";
+}
+
+article {
+    margin: 120px 0;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: "NanumSquareNeoExtraBold";
+    margin-bottom: 70px;
+}
+
+article h4 {
+    text-align: left;
+    line-height: 40px;
+}
+
+/* story1 , story2 공통 */
+.story1,
+.story2 {
+    position: relative;
+    height: 500px;
+}
+
+.story .img_wrap {
+    width: 940px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+}
+
+.story .text_wrap {
+    width: 600px;
+    height: 500px;
+    padding: 140px 60px 0;
+    box-sizing: border-box;
+}
+
+/* story1 개별 */
+.story1 .img_wrap {
+    background: url(../images/aboutUs/img_story1_bg.svg) no-repeat top left;
+    left: -300px;
+    padding: 60px 0 0 140px;
+}
+
+.story1 .text_wrap {
+    background: url(../images/aboutUs/text_stroy1_bg.svg);
+    float: right;
+}
+
+/* story2 개별  */
+.story2 .img_wrap {
+    background: url(../images/aboutUs/img_story2_bg.svg) no-repeat top left;
+    right: -300px;
+    padding: 67px 300px 0 0;
+    box-sizing: border-box;
+}
+
+.story2 .text_wrap {
+    background: url(../images/aboutUs/text_stroy2_bg.svg);
+    float: left;
+}
+
+/* brief 카테고리 소개 */
+.brief_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brief {
+    width: 315px;
+    height: 170px;
+    border: #d8d8d8 1px solid;
+    border-radius: 30px;
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+.brief h4 {
+    font-family: "NanumSquareNeoBold";
+}
+
+.brief .line {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    margin: 2px 0 18px;
+}
+
+.brief p,
+.identity h3 {
+    text-align: left;
+}
+
+/* brand identity */
+.identity {
+    background-color: #f2fbff;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.inner_identity {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/* logo 소개 */
+h6 {
+    font-size: 20px;
+    text-align: left;
+    font-family: "NanumSquareNeoLight";
+    line-height: 36px;
+}
+
+.logo_wrap {
+    margin: 120px 0;
+    height: 264px;
+    padding: 0 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_wrap li {
+    width: 550px;
+}
+
+.logo_wrap li p {
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.logo_wrap li:nth-child(1) p {
+    margin-bottom: 100px;
+}
+
+/* character 소개 */
+.character_img {
+    margin-top: 60px;
+    background: url(../images/aboutUs/character_bg.svg) no-repeat center;
 }

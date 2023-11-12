@@ -14,33 +14,278 @@
             href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css"
             rel="stylesheet"
         />
+        <!-- <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        /> -->
         <link rel="stylesheet" href="./css/commonStyle.css" />
-        <link rel="stylesheet" href="./css/aboutUsStyle.css" />
+        <link rel="stylesheet" href="./css/destinationStyle.css" />
         <link rel="stylesheet" href="./css/headerStyle.css" />
         <link rel="stylesheet" href="./css/footerStyle.css" />
     </head>
 
     <body>
-        <div class="body_wrap">
+        <div id="wrap">
             <header></header>
-
-            <div id="banner"></div>
-
-            <div id="container">
-                <section>
-                    <div class="title"></div>
-                </section>
-
-                <section class="section2">
-                    <div class="title"></div>
-                </section>
+            <div class="h_space"></div>
+            <div id="banner">
+                <div class="inner_banner">
+                    <div class="text_wrap">
+                        <h2 class="line-1 anim-typewriter">
+                            어디로 여행을 떠나시나요?
+                        </h2>
+                    </div>
+                    <div class="search_bar">
+                        <form action="">
+                            <input placeholder="검색어를 입력해주세요." />
+                            <button type="submit">
+                                <img
+                                    src="./images/index/icon_search.svg"
+                                    alt="icon_search"
+                                />
+                            </button>
+                        </form>
+                    </div>
+                    <div class="img_3d">
+                        <img
+                            src="./images/destination/travel.svg"
+                            alt="travel"
+                        />
+                    </div>
+                </div>
             </div>
+            <section class="domestic">
+                <div class="title">
+                    <h3>국내 여행지</h3>
+                    <div class="title_line"></div>
+                </div>
+                <h4>TOP 인기도시</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h6>서울</h6>
+                            <img
+                                src="./images/destination/domestic_seoul.jpg"
+                                alt="domestic_seoul"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6>제주</h6>
+                            <img
+                                src="./images/destination/domestic_jeju.jpg"
+                                alt="domestic_jeju"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6>부산</h6>
+                            <img
+                                src="./images/destination/domestic_busan.jpg"
+                                alt="domestic_busan"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6>경주</h6>
+                            <img
+                                src="./images/destination/domestic_Gyeongju.jpg"
+                                alt="domestic_Gyeongju"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6>강릉</h6>
+                            <img
+                                src="./images/destination/domestic_Gangneung.jpg"
+                                alt="domestic_Gangneung"
+                            />
+                        </a>
+                    </li>
+                </ul>
+                <ol>
+                    <li><a href="#">강원도</a></li>
+                    <li><a href="#">경기도</a></li>
+                    <li><a href="#">경상남도</a></li>
+                    <li><a href="#">경상북도</a></li>
+                    <li><a href="#">광주</a></li>
+                    <li><a href="#">대구</a></li>
+                    <li><a href="#">대전</a></li>
+                    <li><a href="#">부산</a></li>
+                </ol>
+                <ol>
+                    <li><a href="#">서울</a></li>
+                    <li><a href="#">울산</a></li>
+                    <li><a href="#">인천</a></li>
+                    <li><a href="#">전라남도</a></li>
+                    <li><a href="#">전라북도</a></li>
+                    <li><a href="#">제주도</a></li>
+                    <li><a href="#">충청남도</a></li>
+                    <li><a href="#">충청북도</a></li>
+                </ol>
+            </section>
+
+            <section class="abroad">
+                <div class="title">
+                    <h3>해외 여행지</h3>
+                    <div class="title_line"></div>
+                </div>
+                <div class="world_map">
+                    <div class="land yellow">
+                        <a href="#">
+                            <img
+                                src="./images/destination/pin_yellow.svg"
+                                alt="pin_yellow"
+                            />
+                            <img
+                                src="./images/destination/land_yellow.svg"
+                                alt="land_yellow"
+                            />
+                        </a>
+                        <div class="lnb">
+                            <h5>아시아</h5>
+                            <ul>
+                                <li>
+                                    <a href="#">네팔 <span>Nepal</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">대만 <span>Taiwan</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >대한민국
+                                        <span>Republic of Korea</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">라오스 <span>Laos</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">마카오 <span>Macau</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >말레이시아 <span>Malaysia</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">몰디브 <span>Maldives</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >미얀마(버마) <span>Myanmar</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">베트남 <span>Vietnam</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >스리랑카 <span>Sri Lanka</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >싱가포르 <span>Singapore</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >아랍에미리트
+                                        <span>United Arab Emirates</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">인도 <span>India</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >인도네시아 <span>Indonesia</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">일본 <span>Japan</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">중국 <span>China</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >캄보디아 <span>Cambodia</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">태국 <span>Thailand</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >필리핀 <span>Philippines</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">홍콩 <span>Hongkong</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="land skyblue">
+                        <a href="#">
+                            <img
+                                src="./images/destination/pin_skyblue.svg"
+                                alt="pin_skyblue"
+                            />
+                            <img
+                                src="./images/destination/land_skyblue.svg"
+                                alt="land_skyblue"
+                            />
+                        </a>
+                    </div>
+                    <div class="land orange">
+                        <a href="#">
+                            <img
+                                src="./images/destination/pin_orange.svg"
+                                alt="pin_orange"
+                            />
+                            <img
+                                src="./images/destination/land_orange.svg"
+                                alt="land_orange"
+                            />
+                        </a>
+                    </div>
+                    <div class="land blue">
+                        <a href="#">
+                            <img
+                                src="./images/destination/pin_blue.svg"
+                                alt="pin_blue"
+                            />
+                            <img
+                                src="./images/destination/land_blue.svg"
+                                alt="land_blue"
+                            />
+                        </a>
+                    </div>
+                    <div class="land green">
+                        <a href="#">
+                            <img
+                                src="./images/destination/pin_green.svg"
+                                alt="pin_green"
+                            />
+                            <img
+                                src="./images/destination/land_green.svg"
+                                alt="land_green"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
             <footer></footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <script src="./js/utilScript.js"></script>
-        <script src="./js/aboutUsScript.js"></script>
+        <script src="./js/commonScript.js"></script>
+        <script src="./js/destinationScript.js"></script>
     </body>
 </html>

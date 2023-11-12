@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66.037" height="163.952" viewBox="0 0 66.037 163.952">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8c12"/>
+      <stop offset="1" stop-color="#ffbf5e"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.011" cy="0.085" r="1.463" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f2f3"/>
+      <stop offset="0.397" stop-color="#f5f5f6"/>
+      <stop offset="0.715" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <g id="그룹_209" data-name="그룹 209" transform="translate(-1220.405 -2037)">
+    <path id="선_6" data-name="선 6" d="M0,0H95.271" transform="translate(1254.302 2105.002) rotate(90)" fill="none" stroke="#f45a00" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.358"/>
+    <path id="패스_432" data-name="패스 432" d="M11.118,57.728a33.023,33.023,0,1,1,43.888-.089L33.9,79.319,11.118,57.728Z" transform="translate(1220.405 2037)" fill="url(#linear-gradient)"/>
+    <g id="그룹_127" data-name="그룹 127" transform="translate(1233.912 2050.349)">
+      <g id="그룹_125" data-name="그룹 125">
+        <g id="그룹_124" data-name="그룹 124">
+          <g id="그룹_123" data-name="그룹 123">
+            <path id="패스_466" data-name="패스 466" d="M38.468,18.871A19.236,19.236,0,1,0,19.6,38.466a19.236,19.236,0,0,0,18.867-19.6Z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <path id="패스_467" data-name="패스 467" d="M6.22,33.4A19.234,19.234,0,0,1,31.706,4.593,19.234,19.234,0,0,1,6.22,33.4Z" transform="translate(0.545 0.48)" fill="url(#radial-gradient)"/>
+      <g id="그룹_126" data-name="그룹 126" transform="translate(11.129 3.208)">
+        <path id="패스_468" data-name="패스 468" d="M7.845,34.981A19.235,19.235,0,0,0,18.524,0a19.3,19.3,0,0,1,2.6,1.866A19.234,19.234,0,0,1,8.471,35.258,19.143,19.143,0,0,1,0,33.474a19.175,19.175,0,0,0,7.845,1.507Z" fill="#e7ecee"/>
+      </g>
+    </g>
+  </g>
+</svg>
