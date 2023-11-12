@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+body {
+    font-family: "NanumSquareNeoBold";
+    color: #333;
+    background-color: #fff;
+}
+
+#wrap {
+    min-width: 1320px;
+}
+
+.h_space {
+    height: 64px;
+}

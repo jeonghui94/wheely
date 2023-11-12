@@ -1,1 +1,37 @@
 @charset "UTF-8";
+
+@keyframes grow {
+    0% {
+        background-size: 150% auto;
+    }
+    100% {
+        background-size: 200% auto;
+    }
+}
+
+/* banner */
+#banner {
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
+        url(../images/aboutUs/banner.jpg) no-repeat center;
+    animation: grow 30s linear infinite;
+}
+
+.inner_banner {
+    margin: 0 auto;
+    height: 540px;
+    width: 1320px;
+    color: #fff;
+    padding-top: 220px;
+    box-sizing: border-box;
+}
+
+.inner_banner h6 {
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+
+.inner_banner h2 {
+    font-size: 36px;
+    line-height: 53px;
+}
