@@ -201,8 +201,23 @@ h6 {
     margin-bottom: 100px;
 }
 
+.logo_wrap li:nth-child(1) img {
+    width: 500px;
+}
+
+.logo_wrap li:nth-child(2) img {
+    width: 192px;
+}
+
 /* character 소개 */
 .character_img {
     margin-top: 60px;
     background: url(../images/aboutUs/character_bg.svg) no-repeat center;
+    padding-top: 47px;
+    height: 360px;
+    box-sizing: border-box;
+}
+
+.character_img img {
+    height: 266px;
 }
