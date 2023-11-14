@@ -228,10 +228,16 @@ h6 {
     box-shadow: 0.3em 0.3em 0 0 #b2c0e5, inset 0.3em 0.3em 0 0 #b2c0e5;
     padding: 12px 0;
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 
 .domestic ol li:hover a,
-.domestic ol li:hover a {
+.domestic ol li:focus a {
     box-shadow: 0 0 0 0 #3455ab, inset 6em 3.5em 0 0 #3455ab;
     color: #fff;
+}
+
+/* 해외 여행지 */
+.abroad {
+    background-color: antiquewhite;
 }

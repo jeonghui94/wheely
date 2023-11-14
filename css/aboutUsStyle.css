@@ -15,7 +15,7 @@
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),
         url(../images/aboutUs/banner.jpg) no-repeat center;
-    animation: grow 30s linear infinite;
+    animation: grow 12s linear infinite;
 }
 
 .inner_banner {

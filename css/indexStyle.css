@@ -5,15 +5,19 @@
     0% {
         transform: scaleY(1) translateY(0px);
     }
+
     25% {
         transform: scaleY(0.5) translateY(20px);
     }
+
     50% {
         transform: scaleY(1.2) translateY(-20px);
     }
+
     75% {
         transform: scaleY(0.8) translateY(10px);
     }
+
     100% {
         transform: scaleY(1) translateY(0px);
     }
@@ -92,6 +96,7 @@
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -101,6 +106,7 @@
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -162,43 +168,42 @@ video {
 
 /* section - 공통 */
 section {
-    width: 1320px;
-    overflow: hidden;
     margin: 130px auto;
     padding: 10px 0;
-}
-
-/* title - 중앙정렬 */
-#title1 {
-    text-align: center;
 }
 
 /* title - 공통*/
 
 .title {
-    margin-bottom: 60px;
+    width: 1320px;
+    margin: 0 auto 60px;
 }
 
 .inner_title {
-    width: 390px;
+    width: 400px;
     display: inline-block;
 }
 
 .inner_title img {
     display: block;
     float: left;
-    height: 50px;
+    width: 50px;
 }
 
 .title h2 {
     font-size: 30px;
     font-family: "NanumSquareNeoExtraBold";
-    margin: 16px 0 18px;
+    margin: 16px 0;
 }
 
-/* category */
+/* section1 - 여행준비 */
+.title1 {
+    text-align: center;
+}
+
 .category {
     width: 1320px;
+    margin: 0 auto;
     height: 340px;
     display: flex;
     justify-content: space-between;
@@ -299,7 +304,7 @@ section {
     animation: shadow 1s infinite;
 }
 
-/* sub_banner */
+/* sub_banner - 웰컴투윌리 */
 #sub_banner {
     padding: 10px 0;
     text-align: center;
@@ -335,14 +340,30 @@ section {
     cursor: default;
 }
 
-/* place */
-.wrap {
+/* section2 - 인기여행지 */
+
+.title2 .inner_title img {
+    margin-right: 7px;
+}
+
+.place_all {
+    position: relative;
+    height: 300px;
+    margin: 0 auto;
     overflow: hidden;
+    width: 100%;
+}
+
+.place_wrap {
     display: flex;
     justify-content: space-between;
-    height: 300px;
     box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%
 }
+
 .content-hover {
     transition: all 0.2s;
     margin-right: 20px;
@@ -395,7 +416,7 @@ h4 {
     animation-play-state: paused;
 }
 
-/* button - 공통 */
+/* 더보기 button - 공통 */
 
 .button_wrap {
     position: relative;
@@ -405,7 +426,7 @@ h4 {
     width: 87px;
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 35px;
 }
 
 .button a {
@@ -422,9 +443,13 @@ h4 {
     background-color: #d0ccf2;
 }
 
-/* travels */
+/* section3 인기여행기 */
+.title3 .inner_title img {
+    margin-right: 11px;
+}
+
 .swiper {
-    width: 100%;
+    width: 1320px;
     height: 360px;
 }
 
@@ -460,8 +485,8 @@ h4 {
     color: #fff;
     font-size: 13px;
     position: absolute;
-    top: 5px;
-    left: 10px;
+    top: 35px;
+    left: 15px;
     z-index: 9;
 }
 
@@ -483,9 +508,11 @@ h4 {
     font-size: 13px;
     color: #979797;
 }
+
 .swiper-wrapper {
     margin-top: -29px;
 }
+
 .travels li .img_wrap {
     overflow: hidden;
 }
@@ -494,36 +521,39 @@ h4 {
     transform: scale(1.1);
 }
 
-/* travles_btn */
+/* 인기여행기 swiper-btn*/
 .swiper-button-next::after,
 .swiper-button-prev::after {
     display: none;
 }
 
-.swiper-button-wrap {
-    text-align: center;
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    filter: brightness(90%);
 }
 
-.space {
-    display: inline-block;
-    width: 30px;
+.swiper-button-next {
+    right: var(--swiper-navigation-sides-offset,0px);
 }
 
-.swiper-button-wrap span {
-    cursor: pointer;
-    border-radius: 50%;
-    display: inline-block;
-    height: 48px;
-    width: 48px;
+.swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset,0px);
 }
 
-.swiper-button-wrap span:hover {
-    filter: brightness(70%);
+
+.swiper-button-prev,
+.swiper-button-next {
+    opacity: 0.9;
+    width: calc(var(--swiper-navigation-size)/ 44 * 24);
 }
 
-/* board */
-#board {
-    width: 1285px;
+/* section4 - 이벤트,공지사항 */
+#section4 {
+    width: 1320px;
+}
+
+.board {
+    overflow: hidden;
     margin: 0 auto;
 }
 
@@ -539,7 +569,7 @@ h4 {
     border-radius: 30px;
     background-color: #fff;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     font-family: "NanumSquareNeoExtraBold";
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -577,7 +607,7 @@ h4 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#05abe0', endColorstr='#2055B8', GradientType=1);
 }
 
-/* tab-content */
+/* tab-content 이벤트,공지사항 공통 */
 .tab-content {
     display: none;
 }
@@ -586,17 +616,20 @@ h4 {
     display: inherit;
 }
 
-/* tab-1 tab-content event */
-#tab-1 {
-    width: 1320px;
-}
+/* tab-1 tab-content - 이벤트 */
 
 #tab-1 li {
     float: left;
 }
-#tab-1 li:nth-child(2) a {
-    margin: 0 135px;
+
+#tab-1 li:nth-child(1) a {
+    margin-left: 35px;
 }
+
+#tab-1 li:nth-child(2) a {
+    margin: 0 100px;
+}
+
 #tab-1 li a {
     display: block;
     width: 350px;
@@ -614,13 +647,14 @@ h4 {
     opacity: 0.7;
 }
 
-/* tab-2 tab-content notice */
+/* tab-2 tab-content - 공지사항 */
 #tab-2 {
     background-color: #dce5f5;
     padding: 15px 35px;
     height: 350px;
     box-sizing: border-box;
 }
+
 #tab-2 li a {
     display: block;
     background-color: #fff;
@@ -636,7 +670,7 @@ h4 {
     padding: 22px 50px;
 }
 
-#tab-2 > li:hover a {
+#tab-2>li:hover a {
     opacity: 0.6;
 }
 
@@ -645,6 +679,7 @@ h4 {
     background: url(../images/index/sub_banner.png) no-repeat center,
         linear-gradient(90deg, #4c827a, #71bb78);
 }
+
 #sub_banner2 a {
     display: block;
     height: 280px;
