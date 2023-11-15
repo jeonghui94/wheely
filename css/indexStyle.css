@@ -47,7 +47,6 @@
         transform-origin: center bottom;
         bottom:-20px;
         animation-timing-function: ease-in;
-
     }
 
     75% {
@@ -62,7 +61,6 @@
         transform-origin: center bottom;
         bottom:-40px;
         animation-timing-function: ease-in;
-
     }
 }
 
