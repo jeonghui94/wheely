@@ -1,92 +1,94 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* sub_banner ani */
-@keyframes bouncy {
-    0% {
-        transform: scaleY(1) translateY(0px);
-    }
-
-    25% {
-        transform: scaleY(0.5) translateY(20px);
-    }
-
-    50% {
-        transform: scaleY(1.2) translateY(-20px);
-    }
-
-    75% {
-        transform: scaleY(0.8) translateY(10px);
-    }
-
+@keyframes bouncy2 {
     100% {
-        transform: scaleY(1) translateY(0px);
+        top: -20px;
+        text-shadow: 0 1px 0 #738b759c,
+            0 2px 0 #738b759c,
+            0 3px 0 #738b759c,
+            0 4px 0 #738b759c,
+            0 5px 0 #738b759c,
+            0 6px 0 #738b759c,
+            0 7px 0 #738b759c,
+            0 8px 0 #738b759c,
+            0 9px 0 #738b759c,
+            0 10px 0 #738b759c,
+            0 11px 0 #738b759c,
+            0 50px 25px rgba(0, 0, 0, .2);
     }
 }
 
 /* categoty ani */
-@keyframes bounce {
+@keyframes bouncy {
     0% {
-        top: 40px;
+        transform: scaleY(1) translateY(0px);
+        transform-origin: center bottom;
+        bottom:-40px;
         animation-timing-function: ease-in;
+    }
+
+    25% {
+        transform: scaleY(0.9) translateY(20px);
+        transform-origin: center bottom;
+        bottom: -30px;
+        animation-timing-function: ease-out;
     }
 
     50% {
-        top: 120px;
-        height: 40px;
-        animation-timing-function: ease-out;
-    }
-
-    55% {
-        top: 150px;
-        height: 25px;
+        transform: scaleY(1.1) translateY(-20px);
+        transform-origin: center bottom;
+        bottom:-20px;
         animation-timing-function: ease-in;
+
     }
 
-    65% {
-        top: 120px;
-        height: 40px;
+    75% {
+        transform: scaleY(0.9) translateY(10px);
+        transform-origin: center bottom;
+        bottom: -25px;
         animation-timing-function: ease-out;
-    }
-
-    95% {
-        top: 40px;
-        animation-timing-function: ease-in;
     }
 
     100% {
-        top: 40px;
+        transform: scaleY(1) translateY(0px);
+        transform-origin: center bottom;
+        bottom:-40px;
         animation-timing-function: ease-in;
+
     }
 }
 
 @keyframes shadow {
     0% {
-        transform: scale(0.1);
+        transform: scale(1);
         background-color: rgba(0, 0, 0, 0.1);
     }
 
+    20% {
+        transform: scale(0.5);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
     50% {
-        transform: scale(1);
+        transform: scale(0.1);
         background-color: rgba(0, 0, 0, 0.2);
     }
 
-    55% {
-        transform: scale(1);
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    65% {
+    75% {
         transform: scale(0.5);
         background-color: rgba(0, 0, 0, 0.15);
     }
 
-    95% {
-        transform: scale(0.1);
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-
     100% {
-        transform: scale(0.1);
+        transform: scale(1);
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
@@ -251,7 +253,6 @@ section {
     bottom: -14px;
     left: 60px;
     border-radius: 0 0 20px 20px;
-    transition: all 0.5s;
 }
 
 /* hover - 개별 */
@@ -287,7 +288,7 @@ section {
 }
 
 .category li a:hover .icon {
-    animation: bounce 1s infinite;
+    animation: bouncy 1s forwards;
 }
 
 .category .shadow {
@@ -301,7 +302,7 @@ section {
 }
 
 .category li a:hover .shadow {
-    animation: shadow 1s infinite;
+    animation: shadow 1s forwards;
 }
 
 /* sub_banner - 웰컴투윌리 */
@@ -309,35 +310,97 @@ section {
     padding: 10px 0;
     text-align: center;
     font-size: 6em;
-    background-image: linear-gradient(120deg, #91c4ff 0%, #f0f7ff 87%);
+    background-image: linear-gradient(120deg, #91c4ff 0%, #d9ebfd 87%);
 }
 
 .inner_sub_banner {
     width: 1320px;
     height: 280px;
     margin: 0 auto;
-    color: #00b3ff;
-    font-family: "NanumSquareNeoHeavy";
+    color: #8afb97;
+    font-family: 'LOTTERIACHAB';
     line-height: 1.2em;
     opacity: 0;
 }
 
+.inner_sub_banner span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.inner_sub_banner span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.inner_sub_banner span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.inner_sub_banner span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+.inner_sub_banner span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+.inner_sub_banner span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+.inner_sub_banner span:nth-child(8) {
+    animation-delay: .7s;
+}
+
+.inner_sub_banner span:nth-child(9) {
+    animation-delay: .8s;
+}
+
+.inner_sub_banner span:nth-child(10) {
+    animation-delay: .9s;
+}
+
+.inner_sub_banner span:nth-child(11) {
+    animation-delay: .7s;
+}
+
+.inner_sub_banner span:nth-child(12) {
+    animation-delay: .6s;
+}
+
+.inner_sub_banner span:nth-child(13) {
+    animation-delay: .5s;
+}
+
+.inner_sub_banner span:nth-child(14) {
+    animation-delay: .4s;
+}
+
+.inner_sub_banner span:nth-child(15) {
+    animation-delay: .3s;
+}
+
+.inner_sub_banner span:nth-child(16) {
+    animation-delay: .2s;
+}
+
 .text-bounce {
     display: inline-block;
-    padding-top: 80px;
+    position: relative;
+    top: 20px;
+    padding-top: 70px;
     vertical-align: center;
-    transform: scaleY(1) translateY(0px);
-    transform-origin: 50% 100%;
-    transition: 0.3s ease-in-out;
-}
-
-.animate {
-    animation: bouncy 1s forwards;
-    color: #7af188;
-}
-
-.inner_banner:hover {
+    text-shadow: 0 1px 0 #738b759c,
+        0 2px 0 #738b759c,
+        0 3px 0 #738b759c,
+        0 4px 0 #738b759c,
+        0 5px 0 #738b759c,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);
     cursor: default;
+    animation: bouncy2 .7s ease infinite alternate;
 }
 
 /* section2 - 인기여행지 */
@@ -533,11 +596,11 @@ h4 {
 }
 
 .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset,0px);
+    right: var(--swiper-navigation-sides-offset, 0px);
 }
 
 .swiper-button-prev {
-    left: var(--swiper-navigation-sides-offset,0px);
+    left: var(--swiper-navigation-sides-offset, 0px);
 }
 
 
