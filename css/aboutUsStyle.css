@@ -37,11 +37,17 @@
     line-height: 53px;
 }
 
-/* brand story */
+/* section 공통 */
 section {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* brand stroy */
+.inner_story {
     width: 1320px;
     margin: 150px auto;
-    text-align: center;
 }
 
 .title {
@@ -162,7 +168,6 @@ article h4 {
 .identity {
     background-color: #f2fbff;
     padding: 60px 0;
-    width: 100%;
 }
 
 .inner_identity {
