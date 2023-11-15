@@ -44,15 +44,6 @@ $(function () {
     });
 
     // 웰컴투윌리
-    $(".text-bounce").bind(
-        "webkitAnimationEnd mozAnimationEnd animationEnd",
-        function () {
-            $(this).removeClass("animate");
-        }
-    );
-    $(".text-bounce").hover(function () {
-        $(this).addClass("animate");
-    });
     $(window).scroll(function () {
         $(".inner_sub_banner").each(function (i) {
             var bottom_of_element =
