@@ -255,3 +255,59 @@ h6 {
 #world_map {
     filter: saturate(0);
 }
+
+/* svg 세계지도 */
+#world_map_svg {
+    width: 1235px;
+}
+
+#objects {
+    cursor: pointer;
+    fill: #bcbcbc;
+}
+
+.land_gray {
+    cursor: initial;
+}
+
+.cls-1 {
+    opacity: 0.4;
+}
+
+.cls-1,
+.cls-2 {
+    fill: none;
+}
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8 {
+    stroke-width: 0px;
+    transition: all 0.3s;
+}
+
+/* land hover */
+.land_yellow:hover {
+    fill: #f9d991;
+}
+
+.land_orange:hover {
+    fill: #f4b571;
+}
+
+.land_skyblue:hover {
+    fill: #9cd2e8;
+}
+
+.land_blue:hover {
+    fill: #8fa8cc;
+}
+
+.land_green:hover {
+    fill: #99c99b;
+}
