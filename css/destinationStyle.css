@@ -35,7 +35,7 @@
             rgba(61, 172, 219, 0.7)
         ),
         url(../images/destination/banner.jpg) no-repeat center;
-    animation: grow 12s linear infinite;
+    animation: grow 50s linear infinite;
     position: relative;
     height: 540px;
 }
@@ -141,11 +141,15 @@
     right: -150px;
 }
 
-/* 국내 여행지 */
+/* 여행지 공통 */
 section {
-    width: 1320px;
-    margin: 150px auto;
     text-align: center;
+    margin: 150px auto;
+}
+
+/* 국내 여행지 */
+.domestic {
+    width: 1320px;
 }
 
 .title {
@@ -239,5 +243,15 @@ h6 {
 
 /* 해외 여행지 */
 .abroad {
-    background-color: antiquewhite;
+    width: 100%;
+}
+
+.world_map_wrap {
+    background: linear-gradient(to right, #ebf7ed, #deeff7);
+    height: 840px;
+    padding-top: 78px;
+}
+
+#world_map {
+    filter: saturate(0);
 }
