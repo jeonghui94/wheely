@@ -278,23 +278,28 @@ h6 {
 }
 
 /* land hover */
-.land1:hover {
-    fill: #FFD25A;
+#land1:hover,
+#land1.on {
+    fill: #ffd25a;
 }
 
-.land2:hover {
-    fill: #85CDF2;
+#land2:hover,
+#land2.on {
+    fill: #85cdf2;
 }
 
-.land3:hover {
-    fill: #FF9621;
+#land3:hover,
+#land3.on {
+    fill: #ff9621;
 }
 
-.land4:hover {
-    fill: #6885C5;
+#land4:hover,
+#land4.on {
+    fill: #6885c5;
 }
 
-.land5:hover {
+#land5:hover,
+#land5.on {
     fill: #529b58;
 }
 
@@ -303,14 +308,14 @@ h6 {
     height: 548px;
 }
 
-.land_nav>li {
+.land_nav > li {
     width: 1320px;
     margin: 0 auto;
     display: none;
 }
 
-.land_nav>li h5 {
-    font-family: 'NanumSquareNeoExtraBold';
+.land_nav > li h5 {
+    font-family: "NanumSquareNeoExtraBold";
     text-align: left;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -329,13 +334,12 @@ h6 {
 }
 
 .land_lnb ul li a {
-display: block;
-background-color: #bbbbbb28;
-width: 100%;
-margin-bottom: 25px;
-font-size: 14px;
-padding: 7px 0;
-transition: all 0.2s;
+    display: block;
+    background-color: #bbbbbb28;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 14px;
+    padding: 7px 0;
 }
 
 .land_lnb ul li a span {
@@ -344,7 +348,7 @@ transition: all 0.2s;
 
 .land_lnb ul li:hover a {
     color: #fff;
-    background-color: #71BB78;
+    background-color: #71bb78;
 }
 
 /* land lnb 개별 */
