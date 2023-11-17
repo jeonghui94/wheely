@@ -246,41 +246,27 @@ h6 {
     width: 100%;
 }
 
-.world_map_wrap {
-    background: linear-gradient(to right, #ebf7ed, #deeff7);
-    height: 840px;
-    padding-top: 78px;
+.abroad .on {
+    display: block;
 }
 
-#world_map {
-    filter: saturate(0);
+.world_map_wrap {
+    background: linear-gradient(to right, #ebf7ed, #deeff7);
+    height: 500px;
+    padding-top: 60px;
+    position: relative;
 }
 
 /* svg 세계지도 */
 #world_map_svg {
-    width: 1235px;
+    width: 900px;
+    fill: #bcbcbc;
 }
 
 #objects {
     cursor: pointer;
-    fill: #bcbcbc;
 }
 
-.land_gray {
-    cursor: initial;
-}
-
-.cls-1 {
-    opacity: 0.4;
-}
-
-.cls-1,
-.cls-2 {
-    fill: none;
-}
-
-.cls-1,
-.cls-2,
 .cls-3,
 .cls-4,
 .cls-5,
@@ -292,22 +278,92 @@ h6 {
 }
 
 /* land hover */
-.land_yellow:hover {
-    fill: #f9d991;
+.land1:hover {
+    fill: #FFD25A;
 }
 
-.land_orange:hover {
-    fill: #f4b571;
+.land2:hover {
+    fill: #85CDF2;
 }
 
-.land_skyblue:hover {
-    fill: #9cd2e8;
+.land3:hover {
+    fill: #FF9621;
 }
 
-.land_blue:hover {
-    fill: #8fa8cc;
+.land4:hover {
+    fill: #6885C5;
 }
 
-.land_green:hover {
-    fill: #99c99b;
+.land5:hover {
+    fill: #529b58;
+}
+
+/* land lnb */
+.land_nav_wrap {
+    height: 548px;
+}
+
+.land_nav>li {
+    width: 1320px;
+    margin: 0 auto;
+    display: none;
+}
+
+.land_nav>li h5 {
+    font-family: 'NanumSquareNeoExtraBold';
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left 20px center;
+    padding: 20px 0 20px 55px;
+}
+
+.land_lnb ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.land_lnb ul li {
+    width: 282px;
+}
+
+.land_lnb ul li a {
+display: block;
+background-color: #bbbbbb28;
+width: 100%;
+margin-bottom: 25px;
+font-size: 14px;
+padding: 7px 0;
+transition: all 0.2s;
+}
+
+.land_lnb ul li a span {
+    font-size: 13px;
+}
+
+.land_lnb ul li:hover a {
+    color: #fff;
+    background-color: #71BB78;
+}
+
+/* land lnb 개별 */
+#tab1 h5 {
+    background-image: url(../images/destination/mini_yellow.svg);
+}
+
+#tab2 h5 {
+    background-image: url(../images/destination/mini_skyblue.svg);
+}
+
+#tab3 h5 {
+    background-image: url(../images/destination/mini_orange.svg);
+}
+
+#tab4 h5 {
+    background-image: url(../images/destination/mini_blue.svg);
+}
+
+#tab5 h5 {
+    background-image: url(../images/destination/mini_green.svg);
 }
