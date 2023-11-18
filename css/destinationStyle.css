@@ -246,14 +246,10 @@ h6 {
     width: 100%;
 }
 
-.abroad .on {
-    display: block;
-}
-
 .world_map_wrap {
     background: linear-gradient(to right, #ebf7ed, #deeff7);
-    height: 500px;
-    padding-top: 60px;
+    height: 560px;
+    padding-top: 40px;
     position: relative;
 }
 
@@ -261,6 +257,10 @@ h6 {
 #world_map_svg {
     width: 900px;
     fill: #bcbcbc;
+}
+
+.inactive {
+    opacity: 0.3;
 }
 
 #objects {
@@ -274,33 +274,55 @@ h6 {
 .cls-7,
 .cls-8 {
     stroke-width: 0px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 /* land hover */
-#land1:hover,
-#land1.on {
+#land1:hover {
     fill: #ffd25a;
 }
 
-#land2:hover,
-#land2.on {
+#land2:hover {
     fill: #85cdf2;
 }
 
-#land3:hover,
-#land3.on {
+#land3:hover {
     fill: #ff9621;
 }
 
-#land4:hover,
-#land4.on {
+#land4:hover {
     fill: #6885c5;
 }
 
-#land5:hover,
-#land5.on {
+#land5:hover {
     fill: #529b58;
+}
+
+/* land tag */
+.land_tag {
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.land_tag ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.land_tag ul li {
+    cursor: pointer;
+}
+
+.land_tag ul li p {
+    font-family: "NanumSquareNeoExtraBold";
+    line-height: 16px;
+    padding-left: 5px;
+}
+.land_tag ul li img {
+    display: block;
+    height: 30px;
 }
 
 /* land lnb */
@@ -316,6 +338,7 @@ h6 {
 
 .land_nav > li h5 {
     font-family: "NanumSquareNeoExtraBold";
+    font-size: 16px;
     text-align: left;
     background-repeat: no-repeat;
     background-size: 30px;
