@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "TTTtangsbudaejjigaeB";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* banner img ani */
+@keyframes grow {
+    0% {
+        background-size: 130% auto;
+    }
+    100% {
+        background-size: 180% auto;
+    }
+}
+
+/* banner */
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../images/community/banner.jpg) no-repeat top 54% center;
+    animation: grow 50s linear infinite;
+    position: relative;
+    height: 540px;
+    overflow: hidden;
+}
+
+.inner_banner {
+    color: #fff;
+    padding-top: 190px;
+    text-align: center;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.inner_banner h2 {
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+.inner_banner p {
+    font-family: "NanumSquareNeo";
+}
+
+/* search_bar */
+.search_bar {
+    display: inline-block;
+    margin-top: 106px;
+    height: 54px;
+    width: 480px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+}
+
+.search_bar input {
+    border: none;
+    width: 350px;
+    font-size: 18px;
+    color: #8e8e8e;
+    outline: none;
+    background-color: #ffffff00;
+}
+
+.search_bar input::placeholder {
+    color: #adadad;
+}
+
+.search_bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 24px;
+    float: right;
+}
+
+.search_bar button img {
+    display: block;
+    width: 100%;
+}
+
+/* sub banner */
+.sub_banner {
+    margin-top: 150px;
+    height: 280px;
+    background-color: #d6f9f9;
+}
+.inner_sub_banner {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.icon_3d {
+    width: 230px;
+}
+
+.icon_3d img {
+    width: 100%;
+    display: block;
+}
+
+.text_wrap {
+    padding: 51px 0;
+    text-align: left;
+}
+
+.text_wrap li:nth-child(1) {
+    font-size: 40px;
+}
+
+.text_wrap li:nth-child(2) {
+    font-family: "TTTtangsbudaejjigaeB";
+    font-size: 50px;
+    padding: 46px 0;
+}
+
+.text_wrap li:nth-child(2) span {
+    font-size: 60px;
+    color: #fac22b;
+}
+
+.text_wrap li:nth-child(3) {
+    font-size: 26px;
+}
+
+.w_button {
+    width: 150px;
+    background-color: #59afdc;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 22px;
+    margin: 110px 40px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.w_button:hover {
+    background-color: #1983bc;
+}
+
+/* 커뮤니티 공통 */
+section {
+    margin: 150px auto;
+    width: 1320px;
+}
+
+/* 여행기 */
+.title {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.title h5 {
+    font-size: 30px;
+    font-family: "NanumSquareNeoExtraBold";
+    margin-bottom: 30px;
+}
+
+.title_line {
+    background-color: #333;
+    width: 80px;
+    height: 2px;
+    display: inline-block;
+}
+
+h6 {
+    font-size: 26px;
+    font-family: "NanumSquareNeoExtraBold";
+    padding-bottom: 10px;
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+}
+
+.contents {
+    width: 1200px;
+    margin: 30px auto;
+    height: 880px;
+    overflow-x: hidden;
+}
+
+article {
+    height: 200px;
+    width: 1176px;
+    margin-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    display: flex;
+    cursor: pointer;
+}
+
+.travels_text {
+    padding: 20px 30px;
+    width: 976px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.travels_text ul li {
+    margin-top: 10px;
+}
+
+.travels_text .travels_top {
+    color: #aaa;
+}
+
+.travels_text .travels_top li:nth-child(1) {
+    padding-left: 15px;
+    background: url(../images/community/icon_map_pointer.svg) no-repeat center
+        left;
+}
+
+.travels_text .travels_top li:nth-child(2) span {
+    background: url(../images/community/icon_eye.svg) no-repeat center left 36px;
+    padding-left: 60px;
+}
+
+.travels_text p {
+    display: block;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.travels_text .tag {
+    display: flex;
+    font-family: "NanumSquareNeo";
+}
+
+.travels_text .tag li {
+    margin-right: 20px;
+}
+
+.travels_text .travels_top,
+.travels_text .travels_under {
+    display: flex;
+    justify-content: space-between;
+}
+
+.travels_text .travels_under li:nth-child(1) {
+    background: url(../images/community/icon_user.svg) no-repeat center left;
+    padding-left: 35px;
+    height: 30px;
+}
+
+.travels_img {
+    width: 200px;
+    overflow: hidden;
+}
+
+.travels_img img {
+    width: 100%;
+}
+
+.more_btn {
+    width: 186px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #707070;
+    text-align: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.more_btn:hover {
+    background-color: #d5d5d5;
+}

@@ -28,6 +28,7 @@ body {
 
 #wrap {
     min-width: 1400px;
+    cursor: default;
 }
 
 .h_space {

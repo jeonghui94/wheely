@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=1400" />
-        <title>회사소개 | 윌리</title>
+        <title>커뮤니티 | 윌리</title>
         <link
             rel="icon"
             type="image/ico"
@@ -15,31 +15,292 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/commonStyle.css" />
-        <link rel="stylesheet" href="./css/aboutUsStyle.css" />
+        <link rel="stylesheet" href="./css/communityStyle.css" />
         <link rel="stylesheet" href="./css/headerStyle.css" />
         <link rel="stylesheet" href="./css/footerStyle.css" />
     </head>
 
     <body>
-        <div class="body_wrap">
+        <div id="wrap">
             <header></header>
-
-            <div id="banner"></div>
-
-            <div id="container">
-                <section>
-                    <div class="title"></div>
-                </section>
-
-                <section class="section2">
-                    <div class="title"></div>
-                </section>
+            <div class="h_space"></div>
+            <div id="banner">
+                <div class="inner_banner">
+                    <h2>커뮤니티</h2>
+                    <p>
+                        도시별 여행에 과련된 자유로운 커뮤니케이션을
+                        해보세요,<br />다양한 여행팁을 얻으실 수 있습니다.
+                    </p>
+                    <div class="search_bar">
+                        <form action="">
+                            <input placeholder="검색어를 입력해주세요." />
+                            <button type="submit">
+                                <img
+                                    src="./images/index/icon_search.svg"
+                                    alt="icon_search"
+                                />
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
+            <div class="sub_banner">
+                <div class="inner_sub_banner">
+                    <div class="icon_3d">
+                        <img
+                            src="./images/community/travels.svg"
+                            alt="travels"
+                        />
+                    </div>
+                    <ul class="text_wrap">
+                        <li>나도, 온라인 여행작가</li>
+                        <li>웹 <span>여행기</span> 작성해봐요!</li>
+                        <li>
+                            당신의 여행경험, 윌리에 공유하고 포인트 받으세요.
+                        </li>
+                    </ul>
+                    <div class="w_button">글쓰기</div>
+                </div>
+            </div>
+            <section>
+                <div class="title">
+                    <h5>여행기</h5>
+                    <div class="title_line"></div>
+                </div>
+                <h6>최근 순</h6>
+                <div class="contents">
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>다낭, 베트남</li>
+                                <li>2023-08-16 02:28 <span>91</span></li>
+                            </ul>
+                            <p>rloor의 첫 베트남 다낭 3박5일 여행기🏝</p>
+                            <ul class="tag">
+                                <li>#3박5일</li>
+                                <li>#다낭</li>
+                                <li>#마사지</li>
+                                <li>#베트남</li>
+                                <li>#쌀국수</li>
+                                <li>#야시장</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>rloor</li>
+                                <li>여행기간 : 2023.06.12~2023.06.16</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/tavels1.jpg"
+                                alt="travels1"
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>파리, 프랑스</li>
+                                <li>2023-08-03 17:00 <span>171</span></li>
+                            </ul>
+                            <p>에펠탑 아래에서 수영을?⛱️도시 해변 Pick 3</p>
+                            <ul class="tag">
+                                <li>#도시해변</li>
+                                <li>#리펄스베이</li>
+                                <li>#바르셀로네타</li>
+                                <li>#파리</li>
+                                <li>#프랑스</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>Wheelypicker</li>
+                                <li>여행기간 : 2023.08.03~2023.08.06</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/travels2.jpg"
+                                alt="travels2"
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>일본</li>
+                                <li>2023-07-20 20:35 <span>137</span></li>
+                            </ul>
+                            <p>오사카 교토 아라시야마 3박 4일 여행🧳</p>
+                            <ul class="tag">
+                                <li>#오사카</li>
+                                <li>#교토</li>
+                                <li>#아라시야마</li>
+                                <li>#여행</li>
+                                <li>#일본</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>한지지혜</li>
+                                <li>여행기간 : 2023.04.20~2023.04.23</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/travels3.jpg"
+                                alt="travels3"
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>바르셀로나, 스페인</li>
+                                <li>2023-07-19 16:06 <span>241</span></li>
+                            </ul>
+                            <p>
+                                태양과 열정의 도시, 스페인-바르셀로나 4박 5일
+                                여행기
+                            </p>
+                            <ul class="tag">
+                                <li>#가우디</li>
+                                <li>#바르셀로나</li>
+                                <li>#스페인</li>
+                                <li>#여행</li>
+                                <li>#유럽</li>
+                                <li>#유럽여행</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>삐아리</li>
+                                <li>여행기간 : 2023.05.27~2023.05.31</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/travels4.jpg"
+                                alt="travels4"
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>다낭, 베트남</li>
+                                <li>2023-08-16 02:28 <span>91</span></li>
+                            </ul>
+                            <p>rloor의 첫 베트남 다낭 3박5일 여행기🏝</p>
+                            <ul class="tag">
+                                <li>#3박5일</li>
+                                <li>#다낭</li>
+                                <li>#마사지</li>
+                                <li>#베트남</li>
+                                <li>#쌀국수</li>
+                                <li>#야시장</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>rloor</li>
+                                <li>여행기간 : 2023.06.12~2023.06.16</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/tavels1.jpg"
+                                alt="travels1"
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>파리, 프랑스</li>
+                                <li>2023-08-03 17:00 <span>171</span></li>
+                            </ul>
+                            <p>에펠탑 아래에서 수영을?⛱️도시 해변 Pick 3</p>
+                            <ul class="tag">
+                                <li>#도시해변</li>
+                                <li>#리펄스베이</li>
+                                <li>#바르셀로네타</li>
+                                <li>#파리</li>
+                                <li>#프랑스</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>Wheelypicker</li>
+                                <li>여행기간 : 2023.08.03~2023.08.06</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/travels2.jpg"
+                                alt="travels2"
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>일본</li>
+                                <li>2023-07-20 20:35 <span>137</span></li>
+                            </ul>
+                            <p>오사카 교토 아라시야마 3박 4일 여행🧳</p>
+                            <ul class="tag">
+                                <li>#오사카</li>
+                                <li>#교토</li>
+                                <li>#아라시야마</li>
+                                <li>#여행</li>
+                                <li>#일본</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>한지지혜</li>
+                                <li>여행기간 : 2023.04.20~2023.04.23</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/travels3.jpg"
+                                alt="travels3"
+                            />
+                        </div>
+                    </article>
+                    <article>
+                        <div class="travels_text">
+                            <ul class="travels_top">
+                                <li>바르셀로나, 스페인</li>
+                                <li>2023-07-19 16:06 <span>241</span></li>
+                            </ul>
+                            <p>
+                                태양과 열정의 도시, 스페인-바르셀로나 4박 5일
+                                여행기
+                            </p>
+                            <ul class="tag">
+                                <li>#가우디</li>
+                                <li>#바르셀로나</li>
+                                <li>#스페인</li>
+                                <li>#여행</li>
+                                <li>#유럽</li>
+                                <li>#유럽여행</li>
+                            </ul>
+                            <ul class="travels_under">
+                                <li>삐아리</li>
+                                <li>여행기간 : 2023.05.27~2023.05.31</li>
+                            </ul>
+                        </div>
+                        <div class="travels_img">
+                            <img
+                                src="./images/community/travels4.jpg"
+                                alt="travels4"
+                            />
+                        </div>
+                    </article>
+                </div>
+                <div class="more_btn"><p>더보기</p></div>
+            </section>
+
+            <section>
+                <div class="title">
+                    <h5>여행정보</h5>
+                    <div class="title_line"></div>
+                </div>
+            </section>
             <footer></footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/commonScript.js"></script>
-        <script src="./js/aboutUsScript.js"></script>
+        <script src="./js/communityScript.js"></script>
     </body>
 </html>

@@ -19,6 +19,7 @@
         width: 450px;
     }
 }
+
 @keyframes blinkTextCursor {
     from {
         border-right-color: rgba(255, 255, 255, 0.75);
@@ -263,6 +264,7 @@ h6 {
     position: absolute;
     cursor: pointer;
     width: 40px;
+    transition: all 0.3s;
 }
 
 .world_map_wrap span img {
@@ -276,7 +278,7 @@ h6 {
 }
 
 .pin2 {
-    bottom: 276px;
+    top: 226px;
     left: 200px;
 }
 
@@ -286,13 +288,18 @@ h6 {
 }
 
 .pin4 {
-    top: 10px;
+    top: 12px;
     right: 230px;
 }
 
 .pin5 {
-    bottom: 210px;
+    bottom: 208px;
     right: 135px;
+}
+
+.world_map_wrap span:hover {
+    scale: 1.08;
+    transform-origin: center bottom;
 }
 
 /* svg 세계지도 */
