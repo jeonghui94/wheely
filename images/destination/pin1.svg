@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" wclassth="66.037" height="163.952" viewBox="0 0 66.037 163.952">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffba00"/>
+      <stop offset="1" stop-color="#ffe397"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.01" cy="0.085" r="1.463" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f2f3"/>
+      <stop offset="0.397" stop-color="#f5f5f6"/>
+      <stop offset="0.715" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <g id="pin1" transform="translate(10535.037 12984)">
+    <path class="line1" d="M0,0H95.271" transform="translate(-10501.14 -12915.998) rotate(90)" fill="none" stroke="#ff8c12" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-wclassth="1.358"/>
+    <path class="path407" d="M11.119,57.728a33.024,33.024,0,1,1,43.888-.089L33.9,79.319,11.119,57.728Z" transform="translate(-10535.037 -12984)" fill="url(#linear-gradient)"/>
+    <path class="path429" d="M38.466,18.871A19.235,19.235,0,1,0,19.6,38.466a19.235,19.235,0,0,0,18.866-19.6Z" transform="translate(-10521.529 -12970.652)" fill="#fff"/>
+    <path class="path430" d="M6.22,33.4A19.234,19.234,0,0,1,31.706,4.593,19.234,19.234,0,0,1,6.22,33.4Z" transform="translate(-10520.984 -12970.172)" fill="url(#radial-gradient)"/>
+    <path class="path431" d="M7.845,34.981A19.234,19.234,0,0,0,18.522,0a19.2,19.2,0,0,1,2.6,1.866A19.235,19.235,0,0,1,8.471,35.258,19.142,19.142,0,0,1,0,33.474a19.17,19.17,0,0,0,7.845,1.507Z" transform="translate(-10510.4 -12967.444)" fill="#e7ecee"/>
+  </g>
+</svg>

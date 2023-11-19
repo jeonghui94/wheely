@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" wclassth="66.037" height="163.272" viewBox="0 0 66.037 163.272">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1e3c7c"/>
+      <stop offset="1" stop-color="#7e9bdb"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient" cx="0.011" cy="0.085" r="1.463" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f2f2f3"/>
+      <stop offset="0.397" stop-color="#f5f5f6"/>
+      <stop offset="0.715" stop-color="#fff"/>
+    </radialGradient>
+  </defs>
+  <g id="pin4" transform="translate(9841.036 12877.999)">
+    <path class="line4" d="M0,0H95.271" transform="translate(-9807.139 -12809.998) rotate(90)" fill="none" stroke="#0036aa" stroke-miterlimit="10" stroke-wclassth="1.358"/>
+    <path class="path364" d="M11.118,57.726a33.023,33.023,0,1,1,43.888-.087L33.9,79.318,11.118,57.726Z" transform="translate(-9841.036 -12877.999)" fill="url(#linear-gradient)"/>
+    <path class="path_404" data-name="path 404" d="M38.466,18.871A19.235,19.235,0,1,0,19.6,38.468a19.235,19.235,0,0,0,18.866-19.6Z" transform="translate(-9827.529 -12864.652)" fill="#fff"/>
+    <path class="path405" d="M6.22,33.4A19.235,19.235,0,0,1,31.706,4.592,19.235,19.235,0,0,1,6.22,33.4Z" transform="translate(-9826.984 -12864.17)" fill="url(#radial-gradient)"/>
+    <path class="path406" d="M7.847,34.982A19.235,19.235,0,0,0,18.524,0a19.467,19.467,0,0,1,2.6,1.866A19.238,19.238,0,0,1,0,33.475a19.182,19.182,0,0,0,7.847,1.507Z" transform="translate(-9816.401 -12861.444)" fill="#e7ecee"/>
+  </g>
+</svg>

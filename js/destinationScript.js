@@ -15,6 +15,10 @@ $(function () {
         mapAndLnbUpdate($(this));
     });
 
+    $(".world_map>span").click(function () {
+        mapAndLnbUpdate($(this));
+    });
+
     // 공통코드
     function mapAndLnbUpdate(obj) {
         const index = obj.index() + 1;
