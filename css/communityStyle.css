@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* 땅스부대찌개 폰트 */
 @font-face {
     font-family: "TTTtangsbudaejjigaeB";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2")
@@ -8,6 +9,7 @@
     font-style: normal;
 }
 
+/* 예스체 폰트 */
 @font-face {
     font-family: "YES24";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YES24.woff")
@@ -23,6 +25,61 @@
     }
     100% {
         background-size: 180% auto;
+    }
+}
+
+/* sub_banner 3d_img ani */
+@keyframes bounce {
+    0% {
+        top: -30px;
+        animation-timing-function: ease-in;
+    }
+
+    25% {
+        top: -10px;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        top: 10px;
+        animation-timing-function: ease-in;
+    }
+
+    75% {
+        top: -10px;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        top: -30px;
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        transform: scale(0.1);
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    25% {
+        transform: scale(0.5);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        transform: scale(1);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    75% {
+        transform: scale(0.5);
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    100% {
+        transform: scale(0.1);
+        background-color: rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -107,11 +164,27 @@
 
 .icon_3d {
     width: 230px;
+    position: relative;
 }
 
 .icon_3d img {
-    width: 100%;
+    width: 200px;
     display: block;
+    position: absolute;
+    top: -30px;
+    left: 15px;
+    animation: bounce 4s infinite;
+}
+
+.icon_3d .shadow {
+    position: absolute;
+    left: 81px;
+    bottom: 20px;
+    width: 40px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: shadow 4s infinite;
 }
 
 .text_wrap {
@@ -194,12 +267,26 @@ h6 {
     width: 1200px;
     margin: 30px auto;
     height: 880px;
-    overflow-x: hidden;
+    overflow-x: auto;
+}
+
+.contents::-webkit-scrollbar {
+    width: 10px;
+}
+
+.contents::-webkit-scrollbar-thumb {
+    height: 30%;
+    background-color: #007aff;
+    border-radius: 10px;
+}
+
+.contents::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1);
 }
 
 article {
     height: 200px;
-    width: 1176px;
+    width: 1188px;
     margin-bottom: 20px;
     border: 1px solid #d9d9d9;
     display: flex;
@@ -208,7 +295,7 @@ article {
 
 .travels_text {
     padding: 20px 30px;
-    width: 976px;
+    width: 988px;
     height: 200px;
     box-sizing: border-box;
 }
