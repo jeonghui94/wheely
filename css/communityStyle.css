@@ -8,6 +8,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "YES24";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YES24.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* banner img ani */
 @keyframes grow {
     0% {
@@ -274,4 +282,142 @@ article {
 
 .more_btn:hover {
     background-color: #d5d5d5;
+}
+
+/* 여행정보 */
+.more_btn2_wrap {
+    width: 1250px;
+    margin: 0 auto;
+    height: 48px;
+    text-align: right;
+}
+
+.more_btn2 {
+    width: 87px;
+    display: inline-block;
+}
+
+.more_btn2 a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background-color: #f6f5ff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.more_btn2 a:hover {
+    background-color: #d0ccf2;
+}
+
+/* 여행정보 내용 */
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: 300px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.container {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+    text-align: center;
+    height: 300px;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 3rem;
+}
+
+.back {
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    opacity: 0.5;
+    background-color: #000;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back {
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.inner {
+    transform: translateX(-50%) translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 90%;
+    padding: 2rem;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+    border: 2px #fff solid;
+    border-radius: 20px;
+}
+
+.back .inner {
+    border: none;
+}
+
+.container .back {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    font-size: 1.5rem;
+}
+
+.container .front {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    font-family: "YES24";
+}
+
+.container:hover .back {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+.container:hover .front {
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+
+.front .inner p {
+    font-size: 1.8rem;
+    margin: 1rem 0 2rem;
+    position: relative;
+}
+.front .inner span {
+    font-size: 1.3rem;
 }
