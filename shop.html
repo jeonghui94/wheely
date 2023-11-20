@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=1400" />
-        <title>회사소개 | 윌리</title>
+        <title>윌리상점 | 윌리</title>
         <link
             rel="icon"
             type="image/ico"
@@ -15,31 +15,54 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/commonStyle.css" />
-        <link rel="stylesheet" href="./css/aboutUsStyle.css" />
+        <link rel="stylesheet" href="./css/shopStyle.css" />
         <link rel="stylesheet" href="./css/headerStyle.css" />
         <link rel="stylesheet" href="./css/footerStyle.css" />
     </head>
 
     <body>
-        <div class="body_wrap">
+        <div id="wrap">
             <header></header>
-
-            <div id="banner"></div>
-
-            <div id="container">
-                <section>
-                    <div class="title"></div>
-                </section>
-
-                <section class="section2">
-                    <div class="title"></div>
-                </section>
+            <div class="h_space"></div>
+            <div id="banner">
+                <ul class="slide">
+                    <li class="s1"><a href="javascript:return false;"></a></li>
+                    <li class="s2"><a href="javascript:return false;"></a></li>
+                    <li class="s3"><a href="javascript:return false;"></a></li>
+                </ul>
+                <div class="product_search"></div>
             </div>
+            <ul class="etc_link">
+                <li>투어·티켓</li>
+                <li>에어텔·패키지</li>
+                <li>렌터카</li>
+                <li>여행자 보험</li>
+                <li>해외 로밍</li>
+            </ul>
+            <section class="section1">
+                <div class="title"></div>
+            </section>
+
+            <section class="section2">
+                <div class="title"></div>
+                <div class="search_bar_wrap">
+                    <div class="search_bar">
+                        <form action="">
+                            <input placeholder="검색어를 입력해주세요." />
+                            <button type="submit">
+                                <img
+                                    src="./images/shop/icon_search.svg"
+                                    alt="icon_search"
+                                />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
             <footer></footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/commonScript.js"></script>
-        <script src="./js/aboutUsScript.js"></script>
+        <script src="./js/shopScript.js"></script>
     </body>
 </html>

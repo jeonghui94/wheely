@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* banner */
+#banner {
+    height: 540px;
+    position: relative;
+}
+.slide li {
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide li a {
+    display: block;
+    height: 100%;
+}
+.slide li.s1 {
+    background: url(../images/shop/banner1.jpg) no-repeat center/cover;
+}
+.slide li.s2 {
+    background: url(../images/shop/banner2.jpg) no-repeat center/cover;
+}
+.slide li.s3 {
+    background: url(../images/shop/banner3.jpg) no-repeat center/cover;
+}
+
+/* etc */
+.etc_link {
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: "NanumSquareNeoExtraBold";
+    margin-top: 65px;
+}
+
+.etc_link li {
+    width: 240px;
+    padding: 21px 0 21px 50px;
+    box-sizing: border-box;
+    background-color: rgba(91, 175, 220, 0.07);
+    background-repeat: no-repeat;
+    background-position: center right 50px;
+    background-image: url(../images/shop/icon_airplanet.svg);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.etc_link li:nth-child(2) {
+    background-image: url(../images/shop/icon_star.svg);
+}
+
+.etc_link li:nth-child(3) {
+    background-image: url(../images/shop/icon_car.svg);
+}
+
+.etc_link li:nth-child(4) {
+    background-image: url(../images/shop/icon_insurance.svg);
+}
+
+.etc_link li:nth-child(5) {
+    background-image: url(../images/shop/icon_earth.svg);
+}
+
+.etc_link li:hover {
+    background-color: rgba(91, 175, 220, 0.2);
+}
+
+/* search_bar */
+.search_bar_wrap {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.search_bar {
+    display: inline-block;
+    margin-top: 106px;
+    height: 54px;
+    width: 480px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+}
+
+.search_bar input {
+    border: none;
+    width: 350px;
+    font-size: 18px;
+    color: #8e8e8e;
+    outline: none;
+    background-color: #ffffff00;
+}
+
+.search_bar input::placeholder {
+    color: #adadad;
+}
+
+.search_bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 24px;
+    float: right;
+}
+
+.search_bar button img {
+    display: block;
+    width: 100%;
+}
