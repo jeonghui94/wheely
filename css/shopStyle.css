@@ -1,5 +1,35 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Ttangsbudaejjigae";
+    src: url("TTTtangsbudaejjigaeL.eot");
+    src: url("TTTtangsbudaejjigaeL.eot?#iefix") format("embedded-opentype"),
+        url("TTTtangsbudaejjigaeL.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Recipekorea";
+    src: url("RecipekoreaM.eot");
+    src: url("RecipekoreaM.eot?#iefix") format("embedded-opentype"),
+        url("RecipekoreaM.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 20px);
+    }
+}
+
 /* banner */
 #banner {
     height: 540px;
@@ -189,30 +219,33 @@ section {
 
 /* section2 */
 
-/* title2,3 공통 */
+/* title2,3,4 공통 */
 .title2,
-.title3 {
+.title3,
+.title4 {
     width: 1320px;
     margin: 0 auto 60px;
 }
 
 .title2 .inner_title,
-.title3 .inner_title {
+.title3 .inner_title,
+.title4 .inner_title {
     width: 400px;
     display: inline-block;
 }
 
 .title2 .inner_title img,
-.title3 .inner_title img {
+.title3 .inner_title img,
+.title4 .inner_title img {
     display: block;
     float: left;
     width: 50px;
     margin-right: 7px;
-
 }
 
 .title2 h2,
-.title3 h2 {
+.title3 h2,
+.title4 h2 {
     font-size: 30px;
     font-family: "NanumSquareNeoExtraBold";
     margin: 16px 0;
@@ -258,7 +291,6 @@ section {
 
 /* section3 */
 /* 더보기 button */
-
 .button_wrap {
     position: relative;
 }
@@ -321,4 +353,107 @@ section {
 .card:nth-child(6) {
     background: url(../images/shop/pkg6.jpg) no-repeat center;
     background-size: auto 100%;
+}
+
+/* 광고배너 */
+.ad_banner {
+    height: 331px;
+    background: url(../images/shop/ad_banner_bg.svg) no-repeat center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.inner_ad_banner {
+    width: 800px;
+    margin: 0 auto;
+    padding: 80px 0;
+    position: relative;
+}
+
+.inner_ad_banner p {
+    color: #707070;
+    position: relative;
+    z-index: 99;
+}
+
+.inner_ad_banner p:nth-child(1) {
+    font-family: "Ttangsbudaejjigae";
+    font-size: 30px;
+    color: #57a7d1;
+    line-height: 40px;
+}
+.inner_ad_banner p:nth-child(2) {
+    font-family: "Recipekorea";
+    font-size: 60px;
+    padding: 40px 0 30px;
+}
+.inner_ad_banner p:nth-child(3) {
+    font-family: "Recipekorea";
+    font-size: 18px;
+}
+
+.inner_ad_banner p span {
+    color: #229fe1;
+}
+
+.inner_ad_banner ul li {
+    position: absolute;
+}
+
+.inner_ad_banner ul li:nth-child(1) {
+    top: 52%;
+    left: 14%;
+    animation: ani 3s infinite linear alternate;
+}
+.inner_ad_banner ul li:nth-child(2) {
+    top: 4%;
+    left: 60%;
+    animation: ani 2s infinite linear alternate;
+}
+.inner_ad_banner ul li:nth-child(3) {
+    top: 20%;
+    left: 0;
+    animation: ani 1s infinite linear alternate;
+}
+.inner_ad_banner ul li:nth-child(4) {
+    top: 17%;
+    left: 85%;
+    animation: ani 3s infinite linear alternate;
+}
+.inner_ad_banner ul li:nth-child(5) {
+    top: 37%;
+    left: 71%;
+    animation: ani 4s infinite linear alternate;
+}
+
+/* 굿즈 */
+.title4 {
+    text-align: center;
+}
+.title4 .inner_title {
+    width: 180px;
+}
+
+.title4 .button_wrap {
+    height: 48px;
+}
+
+.goods {
+    display: flex;
+    justify-content: center;
+    background-color: #cfdfff;
+}
+
+.goods li {
+    background-color: #cfdfff;
+    cursor: pointer;
+}
+
+.goods li img {
+    display: block;
+}
+
+.goods li:hover {
+    border-radius: 50%;
+    background-color: #f9ebbf;
 }
