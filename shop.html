@@ -1,111 +1,188 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=1400" />
-        <title>윌리상점 | 윌리</title>
-        <link
-            rel="icon"
-            type="image/ico"
-            sizes="32x32"
-            href="./images/favicon.ico"
-        />
-        <link
-            href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/commonStyle.css" />
-        <link rel="stylesheet" href="./css/shopStyle.css" />
-        <link rel="stylesheet" href="./css/headerStyle.css" />
-        <link rel="stylesheet" href="./css/footerStyle.css" />
-    </head>
 
-    <body>
-        <div id="wrap">
-            <header></header>
-            <div class="h_space"></div>
-            <div id="banner">
-                <ul class="slide">
-                    <li class="s1"><a href="javascript:return false;"></a></li>
-                    <li class="s2"><a href="javascript:return false;"></a></li>
-                    <li class="s3"><a href="javascript:return false;"></a></li>
-                </ul>
-                <div class="product_search"></div>
-            </div>
-            <ul class="etc_link">
-                <li>투어·티켓</li>
-                <li>에어텔·패키지</li>
-                <li>렌터카</li>
-                <li>여행자 보험</li>
-                <li>해외 로밍</li>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1400" />
+    <title>윌리상점 | 윌리</title>
+    <link rel="icon" type="image/ico" sizes="32x32" href="./images/favicon.ico" />
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/commonStyle.css" />
+    <link rel="stylesheet" href="./css/shopStyle.css" />
+    <link rel="stylesheet" href="./css/headerStyle.css" />
+    <link rel="stylesheet" href="./css/footerStyle.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <div class="h_space"></div>
+        <div id="banner">
+            <ul class="slide">
+                <li class="s1"><a href="javascript:return false;"></a></li>
+                <li class="s2"><a href="javascript:return false;"></a></li>
+                <li class="s3"><a href="javascript:return false;"></a></li>
             </ul>
-            <section class="section1">
-                <div class="title1">
-                    <img src="./images/shop/icon_time.svg" alt="icon_time" />
-                    <h2>TIME 특가 딜!</h2>
-                </div>
-                <div class="deal">
-                    <div class="deal_img"></div>
-                    <div class="inner_deal">
-                        <h3>다낭/호이안/바나힐 4/5/6일</h3>
-                        <p>
-                            #만족한다낭 #모두좋아한다낭 #인기있다낭
-                            <br />다낭/호이안/바나힐 4성급 패키지
-                        </p>
-                        <h4>
-                            <span class="color">특가</span> 319,000<span
-                                class="small"
-                                >원 ~</span
-                            >
-                        </h4>
-                        <div id="countdown">
-                            <ul>
-                                <li><span id="days"></span>일</li>
-                                <li><span id="hours"></span>:</li>
-                                <li><span id="minutes"></span>:</li>
-                                <li>
-                                    <span id="seconds"></span
-                                    ><b> 남았습니다. </b>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="content" class="deal_end">
-                            TIME 특가 딜이 종료되었습니다.
-                        </div>
-                        <div class="deal_btn">예약하기</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section2">
-                <div class="title2 title">
-                    <div class="inner_title">
-                        <img
-                            src="./images/shop/icon_rainbow.svg"
-                            alt="icon_rainbow"
-                        />
-                        <h2>테마별 여행상품</h2>
-                    </div>
-                    <p>당신의 여행 스타일에 맞춰 상품을 검색하세요!</p>
-                </div>
-                <div class="search_bar_wrap">
-                    <div class="search_bar">
-                        <form action="">
-                            <input placeholder="검색어를 입력해주세요." />
-                            <button type="submit">
-                                <img
-                                    src="./images/shop/icon_search.svg"
-                                    alt="icon_search"
-                                />
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <footer></footer>
+            <div class="product_search"></div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./js/commonScript.js"></script>
-        <script src="./js/shopScript.js"></script>
-    </body>
+        <ul class="etc_link">
+            <li>투어·티켓</li>
+            <li>에어텔·패키지</li>
+            <li>렌터카</li>
+            <li>여행자 보험</li>
+            <li>해외 로밍</li>
+        </ul>
+        <section class="section1">
+            <div class="title1">
+                <img src="./images/shop/icon_time.svg" alt="icon_time" />
+                <h2>TIME 특가 딜!</h2>
+            </div>
+            <div class="deal">
+                <div class="deal_img"></div>
+                <div class="inner_deal">
+                    <h3>다낭/호이안/바나힐 4/5/6일</h3>
+                    <p>
+                        #만족한다낭 #모두좋아한다낭 #인기있다낭
+                        <br />다낭/호이안/바나힐 4성급 패키지
+                    </p>
+                    <h4>
+                        <span class="color">특가</span> 319,000<span class="small">원 ~</span>
+                    </h4>
+                    <div id="countdown">
+                        <ul>
+                            <li><span id="days"></span>일</li>
+                            <li><span id="hours"></span>:</li>
+                            <li><span id="minutes"></span>:</li>
+                            <li>
+                                <span id="seconds"></span><b> 남았습니다. </b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content" class="deal_end">
+                        TIME 특가 딜이 종료되었습니다.
+                    </div>
+                    <div class="deal_btn">예약하기</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="title2 title">
+                <div class="inner_title">
+                    <img src="./images/shop/icon_rainbow.svg" alt="icon_rainbow" />
+                    <h2>테마별 여행상품</h2>
+                </div>
+                <p>당신의 여행 스타일에 맞춰 상품을 검색하세요!</p>
+            </div>
+            <div class="search_bar_wrap">
+                <div class="search_bar">
+                    <form action="">
+                        <input placeholder="검색어를 입력해주세요." />
+                        <button type="submit">
+                            <img src="./images/shop/icon_search.svg" alt="icon_search" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="title title3">
+                <div class="inner_title">
+                    <img src="./images/shop/icon_pick.svg" alt="icon_pick" />
+                    <h2>윌리's PICK 여행패키지</h2>
+                </div>
+                <div class="button_wrap">
+                    <p>
+                        에디터가 추천하는 여행패키지로 쉽고 빠르게 여행을 떠나보세요!
+                    </p>
+                    <div class="button">
+                        <a href="javascript:return false;">
+                            <p>더보기</p>
+                            <img src="./images/index/icon_arrow.svg" alt="icon_arrow " />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pakage_content">
+                <div class="card">
+                    <div class="content">
+                        <h2 class="card_title"><span class="country_name">튀르키예</span> 1,299,000<span>원~</span></h2>
+                        <p class="copy">[튀르키예 9일]
+                            <br>#아시아나항공 #최多판매
+                            <br>#4대오셥+5대특식
+                            <br>#전일특급 #WIFI버스
+                        </p>
+                        <button class="btn">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="card_title"><span class="country_name">오사카</span> 729,000<span>원~</span></h2>
+                        <p class="copy">[★선착순특가★오사카 4일]
+                            <br>◇시내연박+교토+스파월드
+                            <br>또는 USJ 선택가능◇
+                            <br>오사카, 교토, 고베
+                        </p>
+                        <button class="btn">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="card_title"><span class="country_name">북해도</span> 899,000<span>원~</span></h2>
+                        <p class="copy">[★출발확정★북해도 4일]
+                            <br>◇온천호텔2박+도야호수유람선+스키점프경기장◇
+                            <br>삿포로, 오타루, 도야, 노보리베츠
+                        </p>
+                        <button class="btn">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="card_title"><span class="country_name">싱가포르</span> 1,349,000<span>원~</span></h2>
+                        <p class="copy">[★윌리단독★싱가포르 5일]
+                            <br>#프리미엄특급호텔
+                            <br>#전일관광5일
+                            <br>#NO팁 #NO옵션 #NO쇼핑
+                        </p>
+                        <button class="btn">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="card_title"><span class="country_name">이탈리아</span> 1,999,000<span>원~</span></h2>
+                        <p class="copy">[★세미패키지★이탈리아 9일]
+                            <br>#전일정4성일급호텔 #유럽인솔자동반
+                            <br>#프리미엄항공사 #자유일정포함
+                            <br>#실속있는최저가 #완벽일주6박9일
+                        </p>
+                        <button class="btn">VIEW MORE</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="card_title"><span class="country_name">홍콩</span> 799,000<span>원~</span></h2>
+                        <p class="copy">[★에어텔★홍콩 4일]
+                            <br>#아시아나항공 #자유여행
+                            <br>#5성급더하리호텔 #조식포함
+                            <br>디즈니랜드티켓포함
+                        </p>
+                        <button class="btn">VIEW MORE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="ad_banner">
+            <div class="inner_ad_banner"></div>
+        </div>
+        <section class="section3">
+
+        </section>
+        <footer></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/commonScript.js"></script>
+    <script src="./js/shopScript.js"></script>
+
+</body>
+
 </html>

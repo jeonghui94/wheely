@@ -69,3 +69,16 @@ $(function () {
             }, 0);
     })();
 });
+
+$(document).on('ready', function () {
+    $(".regular").slick({
+        centerMode: true,
+        centerPadding: '0px',
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,      //자동시작 (boolean) -default:false
+        autoplaySpeed: 2000, //자동넘기기 시간(int, 1000ms = 1초)
+    });
+});

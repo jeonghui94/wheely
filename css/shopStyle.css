@@ -188,27 +188,31 @@ section {
 }
 
 /* section2 */
-.title2 .inner_title img {
-    margin-right: 7px;
-}
 
-.title2 {
+/* title2,3 공통 */
+.title2,
+.title3 {
     width: 1320px;
     margin: 0 auto 60px;
 }
 
-.title2 .inner_title {
+.title2 .inner_title,
+.title3 .inner_title {
     width: 400px;
     display: inline-block;
 }
 
-.title2 .inner_title img {
+.title2 .inner_title img,
+.title3 .inner_title img {
     display: block;
     float: left;
     width: 50px;
+    margin-right: 7px;
+
 }
 
-.title2 h2 {
+.title2 h2,
+.title3 h2 {
     font-size: 30px;
     font-family: "NanumSquareNeoExtraBold";
     margin: 16px 0;
@@ -250,4 +254,71 @@ section {
     cursor: pointer;
     width: 24px;
     float: right;
+}
+
+/* section3 */
+/* 더보기 button */
+
+.button_wrap {
+    position: relative;
+}
+
+.button {
+    width: 87px;
+    position: absolute;
+    bottom: 0;
+    right: 35px;
+}
+
+.button a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background-color: #f6f5ff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.button a:hover {
+    background-color: #d0ccf2;
+}
+
+/* 여행패키지 목록 */
+.pakage_content {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    width: 420px;
+    height: 420px;
+    margin-bottom: 20px;
+}
+
+.card:nth-child(1) {
+    background: url(../images/shop/pkg1.jpg) no-repeat center;
+    background-size: auto 100%;
+}
+.card:nth-child(2) {
+    background: url(../images/shop/pkg2.jpeg) no-repeat center;
+    background-size: auto 100%;
+}
+.card:nth-child(3) {
+    background: url(../images/shop/pkg3.jpg) no-repeat center;
+    background-size: auto 100%;
+}
+.card:nth-child(4) {
+    background: url(../images/shop/pkg4.jpg) no-repeat center;
+    background-size: auto 100%;
+}
+.card:nth-child(5) {
+    background: url(../images/shop/pkg5.jpg) no-repeat center;
+    background-size: auto 100%;
+}
+.card:nth-child(6) {
+    background: url(../images/shop/pkg6.jpg) no-repeat center;
+    background-size: auto 100%;
 }
