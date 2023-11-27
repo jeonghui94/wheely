@@ -446,8 +446,9 @@ section {
 /* 슬라이더 */
 .section2 {
     position: relative;
-    height: 440px;
+    height: 450px;
     overflow: hidden;
+    margin-top: 200px;
 }
 
 #slick {

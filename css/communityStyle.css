@@ -276,7 +276,7 @@ h6 {
 
 .contents::-webkit-scrollbar-thumb {
     height: 30%;
-    background-color: #007aff;
+    background-color: #80b5ee;
     border-radius: 10px;
 }
 
@@ -432,7 +432,7 @@ article {
 }
 
 .back {
-    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #d2e8f3 0%, #64739a 100%);
     position: absolute;
     top: 0;
     left: 0;
