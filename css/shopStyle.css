@@ -753,6 +753,7 @@ section {
 }
 .title4 .inner_title {
     width: 180px;
+    white-space: nowrap;
 }
 
 .title4 .button_wrap {
