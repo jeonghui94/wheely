@@ -43,24 +43,18 @@ $(function () {
                 const now = new Date().getTime(),
                     distance = countDown - now;
 
-                (document.getElementById("days").innerText = Math.floor(
-                    distance / day
-                )),
-                    (document.getElementById("hours").innerText = Math.floor(
-                        (distance % day) / hour
-                    )),
-                    (document.getElementById("minutes").innerText = Math.floor(
-                        (distance % hour) / minute
-                    )),
-                    (document.getElementById("seconds").innerText = Math.floor(
-                        (distance % minute) / second
-                    ));
-
-                if (distance < 0) {
-                    document.getElementById("countdown").style.display = "none";
-                    document.getElementById("content").style.display = "block";
-                    clearInterval(x);
-                }
+                let d = Math.floor(distance / day);
+                let h = Math.floor((distance % day) / hour);
+                let m = Math.floor((distance % hour) / minute);
+                let s = Math.floor((distance % minute) / second);
+                if (d < 10) d = "0" + d;
+                if (h < 10) h = "0" + h;
+                if (m < 10) m = "0" + m;
+                if (s < 10) s = "0" + s;
+                $("#days").text(d);
+                $("#hours").text(h);
+                $("#minutes").text(m);
+                $("#seconds").text(s);
             }, 0);
     })();
 
