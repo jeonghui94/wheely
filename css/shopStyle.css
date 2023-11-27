@@ -370,6 +370,9 @@ section {
 }
 
 /* section2 */
+.title2 {
+    padding-top: 40px;
+}
 
 /* title2,3,4 공통 */
 .title2,
@@ -410,7 +413,6 @@ section {
 }
 
 .search_bar {
-    display: inline-block;
     height: 54px;
     width: 480px;
     padding: 15px 40px;
@@ -439,6 +441,75 @@ section {
     cursor: pointer;
     width: 24px;
     float: right;
+}
+
+/* 슬라이더 */
+.section2 {
+    position: relative;
+    height: 440px;
+    overflow: hidden;
+}
+
+#slick {
+    position: absolute;
+    top: 0px;
+    left: 45%;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+#next_btn,
+#prev_btn {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#next_btn:hover,
+#prev_btn:hover {
+    fill: #229fe1;
+}
+
+.slick-slide {
+    height: 400px;
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
+}
+.slick-list {
+    /* overflow: visible !important; */
+    height: 400px;
+}
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+    transform: translateY(50px);
+}
+#slick img {
+    width: 350px;
+    filter: brightness(0.8);
+}
+
+.indicaotr {
+    text-align: center;
+    margin: 180px 140px 0 0;
+}
+
+#slick div {
+    position: relative;
+}
+
+#slick div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    color: #fff;
+    font-family: "NanumSquareNeoExtraBold";
+    transform: translate(-50%, -50%);
 }
 
 /* section3 */
@@ -762,13 +833,16 @@ section {
 
 .goods {
     display: flex;
+    grid-gap: 30px;
+    flex-wrap: nowrap;
     justify-content: center;
-    background-color: #cfdfff;
+    animation: marquee 60s linear infinite;
 }
 
 .goods li {
     background-color: #cfdfff;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .goods li img {
@@ -782,4 +856,14 @@ section {
 
 .section4 {
     overflow: hidden;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }

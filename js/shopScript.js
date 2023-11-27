@@ -139,4 +139,15 @@ $(function () {
             li.removeClass("active");
         }
     }
+
+    //슬릭
+    $("#slick").slick({
+        infinite: true,
+        slidesToShow: 3,
+        variableWidth: true,
+        autoplay: true, //자동시작 (boolean) -default:false
+        autoplaySpeed: 2000, //자동넘기기 시간(int, 1000ms = 1초)
+        prevArrow: $("#prevArrow"),
+        nextArrow: $("#nextArrow"),
+    });
 });
