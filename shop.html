@@ -18,6 +18,11 @@
         <link rel="stylesheet" href="./css/shopStyle.css" />
         <link rel="stylesheet" href="./css/headerStyle.css" />
         <link rel="stylesheet" href="./css/footerStyle.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     </head>
 
     <body>
@@ -30,7 +35,72 @@
                     <li class="s2"><a href="javascript:return false;"></a></li>
                     <li class="s3"><a href="javascript:return false;"></a></li>
                 </ul>
-                <div class="product_search"></div>
+
+                <div class="product_search">
+                    <div class="select_wrap">
+                        <p>목적지</p>
+                        <div class="select_mate">
+                            <p class="selection_option" id="open_select"></p>
+                            <span
+                                id="open_select"
+                                class="select_icon dropdown_icon"
+                                ><img
+                                    src="./images/shop/down.svg"
+                                    alt="dropdown"
+                                />
+                            </span>
+                            <div class="cont_list_select_mate list_select">
+                                <ul class="cont_select_int list_contents">
+                                    <li>튀르키예</li>
+                                    <li>베트남</li>
+                                    <li>일본</li>
+                                    <li>싱가포르</li>
+                                    <li>이탈리아</li>
+                                    <li>홍콩</li>
+                                    <li>중국</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select_wrap">
+                        <p>성인</p>
+                        <div class="select_mate">
+                            <p class="selection_option" id="open_select2"></p>
+                            <span
+                                id="open_select2"
+                                class="select_icon2 dropdown_icon"
+                                ><img
+                                    src="./images/shop/down.svg"
+                                    alt="dropdown"
+                                />
+                            </span>
+                            <div class="cont_list_select_mate2 list_select">
+                                <ul class="cont_select_int2 list_contents">
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date-range-container">
+                        <div>
+                            <p>체크인</p>
+                            <input type="text" id="date-range-start" />
+                        </div>
+                        <div>
+                            <p>체크아웃</p>
+                            <input type="text" id="date-range-end" />
+                        </div>
+                    </div>
+                    <div class="product_search_btn">
+                        <p>검색</p>
+                    </div>
+                </div>
             </div>
             <ul class="etc_link">
                 <li>투어·티켓</li>

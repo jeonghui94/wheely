@@ -2,9 +2,7 @@
 
 @font-face {
     font-family: "Ttangsbudaejjigae";
-    src: url("TTTtangsbudaejjigaeL.eot");
-    src: url("TTTtangsbudaejjigaeL.eot?#iefix") format("embedded-opentype"),
-        url("TTTtangsbudaejjigaeL.woff") format("woff");
+    src: url("../fonts/Ttangsbudaejjigae.woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -12,9 +10,7 @@
 
 @font-face {
     font-family: "Recipekorea";
-    src: url("RecipekoreaM.eot");
-    src: url("RecipekoreaM.eot?#iefix") format("embedded-opentype"),
-        url("RecipekoreaM.woff") format("woff");
+    src: url("../fonts/Recipekorea.woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -56,6 +52,170 @@
     background: url(../images/shop/banner3.jpg) no-repeat center/cover;
 }
 
+/* 상품검색바 */
+.product_search {
+    width: 1150px;
+    height: 90px;
+    background-color: #ffffffe0;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    box-shadow: 0 6px 10px #00000010;
+    transform: translateX(-50%);
+    border-radius: 0 60px 60px 0;
+    padding: 7px 20px;
+    box-sizing: border-box;
+}
+
+/* 목적지, 인원수 */
+.select_wrap {
+    float: left;
+    margin-right: 36px;
+}
+
+.select_wrap > p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.select_mate {
+    position: relative;
+    float: left;
+    min-width: 200px;
+    width: 200px;
+    min-height: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: all 375ms ease-in-out;
+}
+
+.dropdown_icon {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    transition: all 275ms;
+    cursor: pointer;
+}
+
+.dropdown_icon img {
+    display: block;
+}
+
+select {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.list_select {
+    position: relative;
+    width: 100%;
+}
+
+.list_contents {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    overflow: hidden;
+    height: 0px;
+    width: 100%;
+    background-color: #fff;
+
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: all 375ms ease-in-out;
+}
+.list_contents > .active {
+    background-color: #eeeeee;
+}
+
+.list_contents > li {
+    width: 100%;
+    color: #777;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    margin: 0px;
+    transition: all 275ms ease-in-out;
+    display: block;
+    cursor: pointer;
+}
+
+.list_contents > li:last-child {
+    border-radius: 3px;
+    border-bottom: 0px;
+}
+.list_contents > li:hover {
+    background-color: #eeeeee;
+}
+
+/* etiqueta <p> con la opcion selecionada  */
+.selection_option {
+    display: block;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+/* 날짜 */
+.date-range-container {
+    display: flex;
+    gap: 36px;
+}
+
+.date-range-container p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.date-range-container input {
+    width: 200px;
+    height: 40px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    border: none;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    box-sizing: border-box;
+    background: url(../images/shop/calendar.svg) no-repeat right 20px center
+        #fff;
+}
+
+/* 검색버튼 */
+.product_search_btn {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.product_search_btn p {
+    padding: 18px 30px;
+    box-sizing: border-box;
+    font-family: "NanumSquareNeoExtraBold";
+    color: #fff;
+    font-size: 16px;
+    width: 137px;
+    height: 64px;
+    border-radius: 0 46px 46px 0;
+    cursor: pointer;
+    background-color: #59afdc;
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    background-image: url(../images/shop/arrow.svg);
+    transition: all 0.5s;
+}
+
+.product_search_btn p:hover {
+    background-color: #229fe1;
+    background-position: right 40px center;
+}
+
 /* etc */
 .etc_link {
     display: flex;
@@ -63,7 +223,7 @@
     margin: 0 auto;
     justify-content: space-between;
     font-family: "NanumSquareNeoExtraBold";
-    margin-top: 65px;
+    margin-top: 110px;
 }
 
 .etc_link li {
