@@ -361,6 +361,12 @@ section {
     position: absolute;
     bottom: 30px;
     right: 35px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.inner_deal .deal_btn:hover {
+    background-color: #389541;
 }
 
 .deal_end {
@@ -461,6 +467,10 @@ section {
     margin: 0px 20px;
 }
 
+#nextArrow {
+    padding-left: 15px;
+}
+
 #next_btn,
 #prev_btn {
     cursor: pointer;
@@ -492,6 +502,7 @@ section {
 #slick img {
     width: 350px;
     filter: brightness(0.8);
+    cursor: pointer;
 }
 
 .indicaotr {
@@ -568,6 +579,7 @@ section {
     height: 420px;
     text-align: center;
     color: whitesmoke;
+    cursor: pointer;
     background-color: whitesmoke;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
         0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
@@ -832,12 +844,22 @@ section {
     height: 48px;
 }
 
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 .goods {
     display: flex;
     grid-gap: 30px;
     flex-wrap: nowrap;
     justify-content: center;
-    animation: marquee 60s linear infinite;
+    animation: marquee 30s linear infinite;
 }
 
 .goods li {
@@ -857,14 +879,4 @@ section {
 
 .section4 {
     overflow: hidden;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
 }
