@@ -102,14 +102,6 @@
     display: block;
 }
 
-select {
-    position: absolute;
-    overflow: hidden;
-    height: 0px;
-    opacity: 0;
-    z-index: -1;
-}
-
 .list_select {
     position: relative;
     width: 100%;

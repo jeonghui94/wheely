@@ -76,11 +76,13 @@ $(function () {
     const fp_a = flatpickr($("#date-range-start"), {
         minDate,
         defaultDate: startDate,
+        locale: "ko",
     });
 
     const fp_b = flatpickr($("#date-range-end"), {
         minDate,
         defaultDate: startDate,
+        locale: "ko",
     });
 
     // ========================= 셀렉터 타이머 이상한데?? 타이머도 수정해라
