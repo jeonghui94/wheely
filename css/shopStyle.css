@@ -595,6 +595,7 @@ section {
 }
 
 .country_name {
+    white-space: nowrap;
     margin-right: 60px;
     width: 100px;
     display: inline-block;
